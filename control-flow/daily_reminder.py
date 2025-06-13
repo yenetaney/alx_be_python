@@ -6,23 +6,23 @@ while reminder:
     match priority:
         case "high":
               if time_bound == "yes":
-                   print(f"'{task}' is a high priority task that requires immediate attention today!")
+                   print(f"Reminder:'{task}' is a high priority task that requires immediate attention today!")
               elif time_bound == "no":
-                print(f"'{task}'High priority task: Urgent in importance, not in timing")
+                print(f"'Reminder: {task}'High priority task: Urgent in importance, not in timing")
               else:
-                   print(f"the task is '{task}' but they is no time_bound")
+                   print(f"Reminder: the task is '{task}' but they is no time_bound")
         case "medium":
             if time_bound == "yes":
-                   print(f"'{task}'is a medium priority task that requires attention today!")
+                   print(f"Reminder: '{task}'is a medium priority task that requires attention today!")
             elif time_bound == "no":
-                print(f"'{task}'medium priority task not in timing")
+                print(f"Reminder: '{task}'medium priority task not in timing")
             else:
-                   print(f"the task is '{task}' but they is no time_bound")
+                   print(f"Reminder: the task is '{task}' but they is no time_bound")
         case "low":
               if time_bound == "yes":
-                   print(f"{task} is a low priority task you can do it in your free time today!")
+                   print(f"Reminder: {task} is a low priority task you can do it in your free time today!")
               elif time_bound == "no":
-                print(f"{task} is a low priority task. Consider completing it when you have free time.")
+                print(f"Reminder: {task} is a low priority task. Consider completing it when you have free time.")
               else:
-                   print(f"the task is {task} but they is no time_bound")
+                   print(f"Reminder: the task is {task} but they is no time_bound")
     break
