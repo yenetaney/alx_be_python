@@ -1,6 +1,5 @@
 # math_operations.py
 def perform_operation(num1: float, num2: float, operation: str) -> float:
-    """Performs a basic arithmetic operation on two numbers."""
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
