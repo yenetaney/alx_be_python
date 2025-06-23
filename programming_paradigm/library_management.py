@@ -18,13 +18,12 @@ class Library:
                 return
         print(f'Book not available: "{title}"')
      
-    def return_book(self, title):
-        for book in self._book:
-            if book.title == title and not book.is_checked_out():
-                book.return_book()
-                print(f"returned :{title}")
-                return
-        print(f"Book not found or not cheaked out :{title}")
+    def return_book(self):
+        if self._is_checked_out:
+            self._is_checked_out = False
+            return True
+        return False
+        
 
     def list_available_books(self):
         print("Avaliable books: ")
