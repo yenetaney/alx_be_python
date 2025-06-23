@@ -1,0 +1,21 @@
+import unittest
+from simple_calculator import simple_calculator
+
+class TestSimpleCalculator(unittest.TestCase):
+    def set_up(self):
+        self.calc = simple_calculator()
+    def test_add(self):
+         self.assertEqual(self.calc.add(6,9),11)
+    def test_subtract(self):
+        self.assertEqual(self.calc.subtract(10,9),1)
+    def test_divide(self):
+         self.assertEqual(self.calc.divide(10,2),5)
+    def test_multiply(self):
+        self.assertEqual(self.calc.multiply(3, 7), 21)
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.calc.divide(10, 0)
+
+if __name__ == '__main__':
+    unittest.main()
+
