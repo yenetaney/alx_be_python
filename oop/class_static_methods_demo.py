@@ -7,7 +7,10 @@ class Calculator:
         return a * b
     
     @staticmethod
-    def multiply(a, b):
-        return a + b
+    def add(a, b):
+        result = a + b
+        print(f"The sum is: {result}")
+        return result
+
 
 
