@@ -7,11 +7,8 @@ class Calculator:
         print(f"The sum is: {result}")
         return result
     
-    @classmethod
-    def multiply(cls, a, b):
-        print(f"Calculation type: {cls.calculation_type}")
-        result = a * b
-        print(f"The product is: {result}")
-        return result
+    @staticmethod
+    def multiply(a, b):
+        return a * b
 
 
