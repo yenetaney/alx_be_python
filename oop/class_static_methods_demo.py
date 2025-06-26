@@ -1,11 +1,10 @@
 class Calculator:
     calculation_type = "Arithmetic Operations"
 
-    @staticmethod
-    def add(a, b):
-        result = a + b
-        print(f"The sum is: {result}")
-        return result
+    @classmethod
+    def multiply(cls, a, b):
+        print(f"Calculation type: {cls.calculation_type}")
+        return a * b
     
     @staticmethod
     def multiply(a, b):
